@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cronometro</title>
+  <link rel="stylesheet" type="text/css" href="welcome.css">
+  
+  <script src="welcome.js"></script>
+</head>
+<body>
+
+  <div id="testo">
+    <h1>TIMER</h1>
+  </div>
+  
+
+  <div id="timer">
+    <h2 id="Cronometro">00:00:000</h2>
+  </div>
+
+
+
+  <div id="button">
+    <button onclick="inizio()" id="inizio" class="inizio">START</button>
+    <button onclick="stop()" id="stop" class="stop">STOP</button>
+    <button onclick="azzera()" id="azzera" class="azzera">RESET</button>
+  </div>
+
+
+  <div>
+  <table id="tabella">
+    <tr>
+      <th>N</th>
+      <th>Tempo</th>
+      <th>Note</th>
+      <th>Visualizzato</th>
+    </tr>
+  </table>
+</div>
+
+<p>Il cronometro online permette di misurare al millisecondo il tempo che passa dopo aver premuto il pulsante "START", se si preme sul bottone "STOP" il tempo si ferma, mentre l'ultimo bottone farà tornare il cronometro a zero ed elimina la tabella.</p>
+</body>
+</html>

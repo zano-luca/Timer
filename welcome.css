@@ -1,0 +1,129 @@
+body{
+  background-color: #1205c4; 
+}
+
+h2{
+  margin-top: 50px;
+  color: white;
+}
+
+h1{
+  font-size: 50px;
+  margin-top: 20px;
+  color: white;
+}
+
+button{
+  color: white;
+  font-size: 20px;
+  background-color: blueviolet;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 20px;
+}
+
+div{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+
+table {
+  animation: entrata_quattro 2s ease-in-out;
+  width: 90%;
+  border: 3px solid #ff0000;
+}
+
+tr {
+  border: 2px solid #ff0000;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+
+}
+
+th {
+  background-color: #ffffff;
+}
+
+p{
+  font-size: 20px;
+  color: #2bff00;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: entrata 2s ease-in-out;
+  margin: 150px;
+}
+
+input{
+  border-radius: 5px;
+  border: 3px solid #000000;
+  background-color: #636363;
+  height: 25px;
+  color: #ffffff;
+  font-size: 15px;
+  width:auto;
+}
+
+button:hover{
+  box-shadow: 2px 2px 2px 2px #000000;
+}
+
+@keyframes entrata {
+  
+  0% {
+    transform: translateX(-600%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#testo{
+  position: relative;
+  animation: entrata 2s ease-in-out;
+}
+
+#timer{
+  position: relative;
+  animation: entrata_due 2s ease-in-out;
+}
+
+@keyframes entrata_due {
+  
+  0% {
+    transform: translateX(+50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#button{
+  position: relative;
+  animation: entrata_tre 2s ease-in-out;
+}
+
+@keyframes entrata_tre {
+  0% {
+    transform: translateY(230%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes entrata_quattro {
+  0% {
+    transform: translateY(430%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
